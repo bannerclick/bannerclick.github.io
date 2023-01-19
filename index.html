@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Custom overrides -->
+    <link rel="stylesheet" href="css/custom.css">
+
+    <title>Exploring the Cookieverse: A Multi-Perspective Analysis of Web Cookies</title>
+</head>
+
+
+<body>
+    <!-- Put nav into container to center it on the page -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <!--	            <a class="navbar-brand" href="#">↑</a>-->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav container">
+                    <ul class="navbar-nav justify-content-between w-100">
+                        <li><a class="nav-item nav-link" href="#home">↑</a></li>
+                        <li><a class="nav-item nav-link" href="#bannerclick">BannerClick</a></li>
+                        <li><a class="nav-item nav-link" href="#paper">Paper</a></li>
+                        <li><a class="nav-item nav-link" href="#reproduc">Reproducibility</a></li>
+                        <li><a class="nav-item nav-link" href="#partners">Partners</a></li>
+                        <li><a class="nav-item nav-link" href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+
+        <div id="home" style="padding-top: 3em">
+            <h1>Exploring the Cookieverse: A Multi-Perspective Analysis of Web Cookies</h1>
+
+            <article class="px-4 py-2 row">
+
+            <div class="more-pad">
+                <p>On this website we present our paper <a href="#paper"><em>Exploring the Cookieverse: A Multi-Perspective Analysis of Web Cookies</em></a> published at the <a href="https://pam2023.networks.imdea.org/">Passive and Active Measurement Conference 2023</a> and the tool <a href="#bannerclick">BannerClick</a>.</p>
+            </div>
+
+            </article>
+
+        </div>
+
+        <div id="bannerclick">
+
+            <h2>BannerClick</h2>
+
+            <article class="px-4 py-2 row">
+
+                <p>BannerClick is a tool built on top of <a href="https://github.com/mozilla/OpenWPM">OpenWPM</a> which allows you to automatically interact with cookie banners on websites. We publish <a href="https://github.com/bannerclick/bannerclick">BannerClick on GitHub</a> for fellow researchers.</p>
+
+            </article>
+
+        </div>
+
+
+        <div id="paper">
+
+            <h2>Paper</h2>
+
+            <article class="px-4 py-2 row">
+                <a href="rasaii2023exploring.pdf" class="paper-screenshot-link col-12 col-md-4">
+                    <img src="rasaii2023exploring.jpg" class="img-fluid img-thumbnail paper-screenshot" alt="Exploring the Cookieverse: A Multi-Perspective Analysis of Web Cookies" width="800" height="1071"></a>
+                <div class="col-12 col-md-8">
+                    <p><b>Abstract.</b>
+            Web cookies have been the subject of many research studies over the last few years. However, most existing research does not consider multiple crucial perspectives that can influence the cookie landscape, such as the client’s location, the impact of cookie banner interaction, and from which operating system a website is being visited. In this paper, we conduct a comprehensive measurement study to analyze the cookie landscape for Tranco top-10k websites from different geographic locations and analyze multiple different perspectives. One important factor which influences cookies is the use of cookie banners. We develop a tool, BannerClick , to automatically detect and interact with cookie banners with an accuracy of 99% and 96%, respectively. We find banners to be 56% more prevalent when visiting websites from within the EU region. Moreover, we analyze the effect of banner interaction on different types of cookies (i.e., first-party, third-party, and tracking). For instance, we observe that websites send, on average, 5.5× more third-party cookies after clicking “accept”, underlining that it is critical to interact with banners when performing Web measurements. Additionally, we analyze statistical consistency, evaluate the widespread deployment of consent management platforms, compare landing to inner pages, and assess the impact of visiting a website on a desktop compared to a mobile phone. Our study highlights that all of these factors substantially impact the cookie landscape, and thus a multi-perspective approach should be taken when performing Web measurement studies.</p>
+                    <p><b>Authors.</b> <a href="https://www.mpi-inf.mpg.de/departments/inet/people/ali-rasaii">Ali Rasaii</a>, Shivani Singh, <a href="https://www.devashishgosain.com/">Devashish Gosain</a>, and <a href="https://olivergasser.net/">Oliver Gasser</a>.</p>
+                    <div class="row row-cols-auto paper-buttons"><a href="rasaii2023exploring.pdf" class="btn btn-primary col paper-button">Download paper</a>
+                        <a href="rasaii2023exploring.bib" class="btn btn-outline-secondary col paper-button">Bibtex</a>
+                    </div>
+                </div>
+            </article>
+        </div>
+
+        <div id="reproduc">
+            <h2>Reproducibility</h2>
+
+            <article class="px-4 py-2 row">
+                <p>We publish data and scripts to reproduce our analysis at the
+                    <a href="TODO">Open Research Data Repository of the Max Planck Society</a> to guarantee long-term availability.
+                </p>
+
+                <p><b>Dataset DOI.</b> <a href="https://doi.org/TODO">TODO</a></p>
+            </article>
+        </div>
+
+        <div id="partners">
+            <h2>Partners</h2>
+
+            <article class="px-4 py-2 row">
+            <div class="row align-items-center">
+                <div class="col-md-4 ml-auto my-3 logo-container">
+                    <a href="https://www.mpi-inf.mpg.de" class="a-img"><img src="logos/mpilogo-inf-narrow.png" alt="MPI for Informatics logo" class="img-fluid logo" /></a>
+                </div>
+                <div class="col-md-4 mx-auto my-3 logo-container">
+                    <a href="https://nyu.edu/" class="a-img"><img src="logos/nyu-logo-2.png" alt="NYU logo" class="img-fluid logo" /></a>
+                </div>
+                <div class="col-md-4 mx-auto my-3 logo-container">
+                    <a href="https://www.kuleuven.be/" class="a-img"><img src="logos/kuleuven.png" alt="KU Leuven logo" class="img-fluid logo" /></a>
+                </div>
+            </div>
+            </article>
+        </div>
+
+        <div id="contact">
+
+            <h2>Contact</h2>
+
+            <article class="px-4 py-2 row">
+
+                <p>You can contact us at <a href="mailto:bannerclick@mpi-inf.mpg.de">bannerclick@mpi-inf.mpg.de</a>.</p>
+
+            </article>
+        </div>
+
+    </div> <!-- /container -->
+
+
+    <!-- JS STARTS HERE -->
+    <!-- jQuery -->
+    <script src="js/jquery-3.6.0.min.js"></script>
+
+    <!-- Bootstrap JS - necessary for expanding the navbar menu -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Hide navbar on click -->
+    <script>
+        $('.nav-item').on('click', function() {
+            $('.navbar-collapse').collapse('hide');
+        });
+
+    </script>
+    <!-- JS ENDS HERE -->
+
+</body>
+
+</html>
