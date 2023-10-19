@@ -50,7 +50,8 @@
                         <p>On this website we present two of our <a href="#papers">papers</a> published at the
                             <a href="https://pam2023.networks.imdea.org/">PAM23</a> and <a
                                 href="https://conferences.sigcomm.org/imc/2023/">IMC23</a> and the tool <a
-                                href="#bannerclick">BannerClick</a>.
+                                href="#bannerclick">From Cookie Banners to Cookie Paywalls: An Automated Analysis of Web
+                                Cookies</a>.
                         </p>
                     </div>
 
@@ -75,6 +76,48 @@
 
             <div id="papers">
                 <h2>Papers</h2>
+                <div id="imc23">
+                    <center>
+                        <h3>Thou Shalt Not Reject: Analyzing Accept-Or-Pay Cookie Banners on the Web</h3>
+                        <h5>ACM Internet Measurement Conference 2023 (IMC23)</h5>
+                    </center>
+                    <br>
+                    <article class="px-4 py-2 row">
+                        <a href="rasaii2023cookiewall.pdf" class="paper-screenshot-link col-12 col-md-4">
+                            <img src="rasaii2023cookiewall.jpg" class="img-fluid img-thumbnail paper-screenshot"
+                                alt="Thou Shalt Not Reject: Analyzing Accept-Or-Pay Cookie Banners on the Web"
+                                width="800" height="1071"></a>
+                        <div class="col-12 col-md-8">
+                            <p><b>Abstract.</b>
+                                Privacy regulations have led to many websites showing cookie banners to their users.
+                                Usually, cookie banners present the user with the option to “accept” or “reject”
+                                cookies. Recently, a new form of paywall-like cookie banner has taken hold on the Web,
+                                giving users the option to either accept cookies (and consequently user tracking) or buy
+                                a paid subscription for a tracking-free website experience. In this paper, we perform
+                                the first completely automated analysis of cookiewalls, i.e., cookie banners acting as a
+                                paywall. We find cookiewalls on 0.6% of all queried 45k websites. Moreover, cookiewalls
+                                are deployed to a large degree on European websites, e.g., for Germany we see
+                                cookiewalls on 8.5% of top 1k websites. Additionally, websites using cookiewalls send
+                                6.4 times more third-party cookies and 42 times more tracking cookies to visitors,
+                                compared to regular cookie banner websites. We also uncover two large Subscription
+                                Management Platforms used on hundreds of websites, which provide website operators with
+                                easy-to-setup cookiewall solutions. Finally, we plan to publish tools, data, and code to
+                                foster reproducibility and further studies.</p>
+                            <p><b>Authors.</b> <a
+                                    href="https://www.mpi-inf.mpg.de/departments/inet/people/ali-rasaii">Ali
+                                    Rasaii</a>,
+                                <a href="https://www.devashishgosain.com/">Devashish Gosain</a>,
+                                and <a href="https://olivergasser.net/">Oliver Gasser</a>.
+                            </p>
+                            <div class="row row-cols-auto paper-buttons"><a href="rasaii2023cookiewall.pdf"
+                                    class="btn btn-primary col paper-button">Download paper</a>
+                                <a href="rasaii2023cookiewall.bib"
+                                    class="btn btn-outline-secondary col paper-button">Bibtex</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
                 <div id="pam23">
                     <center>
                         <h3>Exploring the Cookieverse: A Multi-Perspective Analysis of Web Cookies</h3>
@@ -119,48 +162,6 @@
                         </div>
                     </article>
                 </div>
-
-                <div id="pam23">
-                    <center>
-                        <h3>Thou Shalt Not Reject: Analyzing Accept-Or-Pay Cookie Banners on the Web</h3>
-                        <h5>ACM Internet Measurement Conference 2023 (IMC23)</h5>
-                    </center>
-                    <br>
-                    <article class="px-4 py-2 row">
-                        <a href="rasaii2023cookiewall.pdf" class="paper-screenshot-link col-12 col-md-4">
-                            <img src="rasaii2023cookiewall.jpg" class="img-fluid img-thumbnail paper-screenshot"
-                                alt="Thou Shalt Not Reject: Analyzing Accept-Or-Pay Cookie Banners on the Web"
-                                width="800" height="1071"></a>
-                        <div class="col-12 col-md-8">
-                            <p><b>Abstract.</b>
-                                Privacy regulations have led to many websites showing cookie banners to their users.
-                                Usually, cookie banners present the user with the option to “accept” or “reject”
-                                cookies. Recently, a new form of paywall-like cookie banner has taken hold on the Web,
-                                giving users the option to either accept cookies (and consequently user tracking) or buy
-                                a paid subscription for a tracking-free website experience. In this paper, we perform
-                                the first completely automated analysis of cookiewalls, i.e., cookie banners acting as a
-                                paywall. We find cookiewalls on 0.6% of all queried 45k websites. Moreover, cookiewalls
-                                are deployed to a large degree on European websites, e.g., for Germany we see
-                                cookiewalls on 8.5% of top 1k websites. Additionally, websites using cookiewalls send
-                                6.4 times more third-party cookies and 42 times more tracking cookies to visitors,
-                                compared to regular cookie banner websites. We also uncover two large Subscription
-                                Management Platforms used on hundreds of websites, which provide website operators with
-                                easy-to-setup cookiewall solutions. Finally, we plan to publish tools, data, and code to
-                                foster reproducibility and further studies.</p>
-                            <p><b>Authors.</b> <a
-                                    href="https://www.mpi-inf.mpg.de/departments/inet/people/ali-rasaii">Ali
-                                    Rasaii</a>,
-                                <a href="https://www.devashishgosain.com/">Devashish Gosain</a>,
-                                and <a href="https://olivergasser.net/">Oliver Gasser</a>.
-                            </p>
-                            <div class="row row-cols-auto paper-buttons"><a href="rasaii2023cookiewall.pdf"
-                                    class="btn btn-primary col paper-button">Download paper</a>
-                                <a href="rasaii2023cookiewall.bib"
-                                    class="btn btn-outline-secondary col paper-button">Bibtex</a>
-                            </div>
-                        </div>
-                    </article>
-                </div>
             </div>
 
             <div id="reproduc">
@@ -168,14 +169,14 @@
 
                 <article class="px-4 py-2 row">
                     <p>We publish data and scripts to reproduce our analysis at the
-                        <a href="https://doi.org/10.17617/3.1MUYFX">Open Research Data Repository of the Max Planck
-                            Society</a> to guarantee long-term availability.
+                        Open Research Data Repository of the Max Planck Society to guarantee long-term availability.
                     </p>
 
-                    <p><b>Dataset DOI. (PAM paper)</b> <a href="https://doi.org/10.17617/3.1MUYFX">10.17617/3.1MUYFX</a>
-                    </p>
                     <p><b>Dataset DOI. (IMC paper)</b> <a href="https://doi.org/10.17617/3.TREBZR">10.17617/3.TREBZR</a>
                     </p>
+                    <p><b>Dataset DOI. (PAM paper)</b> <a href="https://doi.org/10.17617/3.1MUYFX">10.17617/3.1MUYFX</a>
+                    </p>
+
                 </article>
             </div>
 
@@ -195,6 +196,10 @@
                         <div class="col-md-4 mx-auto my-3 logo-container">
                             <a href="https://www.kuleuven.be/" class="a-img"><img src="logos/kuleuven.png"
                                     alt="KU Leuven logo" class="img-fluid logo" /></a>
+                        </div>
+                        <div class="col-md-4 mx-auto my-3 logo-container">
+                            <a href="https://www.bits-pilani.ac.in/" class="a-img"><img src="logos/BITS_Pilani.png"
+                                    alt="BITS Pilani logo" class="img-fluid logo" /></a>
                         </div>
                     </div>
                 </article>
