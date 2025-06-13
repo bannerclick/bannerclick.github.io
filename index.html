@@ -49,8 +49,9 @@
 
                     <div class="more-pad">
                         <p>On this website we present two of our <a href="#papers">papers</a> published at the
-                            <a href="https://pam2023.networks.imdea.org/">PAM23</a> and <a
-                                href="https://conferences.sigcomm.org/imc/2023/">IMC23</a> and the tool <a
+                            <a href="https://pam2023.networks.imdea.org/">PAM23</a>, <a
+                                href="https://conferences.sigcomm.org/imc/2023/">IMC23</a>, and <a
+                                href="https://petsymposium.org/2025/">PETS25</a> as well as the tool <a
                                 href="#bannerclick">BannerClick</a>.
                         </p>
                     </div>
@@ -76,6 +77,65 @@
 
             <div id="papers">
                 <h2>Papers</h2>
+                <div id="pets25">
+                    <center>
+                        <h3>Intractable Cookie Crumbs: Unveiling the Nexus of Stateful Banner Interaction and Tracking
+                            Cookies</h3>
+                        <h5>Proceedings of the 25th Privacy Enhancing Technologies Symposium (PETS 2025)</h5>
+                    </center>
+                    <br>
+                    <article class="px-4 py-2 row">
+                        <a href="rasaii2025intractable.pdf" class="paper-screenshot-link col-12 col-md-4">
+                            <img src="rasaii2025intractable.jpg" class="img-fluid img-thumbnail paper-screenshot" alt="Intractable Cookie Crumbs: Unveiling the Nexus of Stateful Banner Interaction and Tracking
+                            Cookies" width="800" height="1071"></a>
+                        <div class="col-12 col-md-8">
+                            <p><b>Abstract.</b>
+                                In response to the ePrivacy Directive and the consent requirements introduced by the
+                                GDPR, websites began deploying consent banners to obtain user permission for data
+                                collection and processing. However, due to shared third-party services and technical
+                                loopholes, non-consensual cross-site tracking can still occur. In fact, contrary to user
+                                expectations of seemingly isolated consent, a user's decision on one website may affect
+                                tracking behavior on others.
+
+                                In this study, we investigate the technical and behavioral mechanisms behind these
+                                discrepancies. Specifically, we disclose a persistent tracking mechanism exploiting web
+                                cookies. These cookies, which we refer to as intractable, are initially set on websites
+                                with accepted banners, persist in the browser, and are subsequently sent to trackers
+                                before the user provides explicit consent on other websites. To meticulously analyze
+                                this covert tracking behavior, we conduct an extensive measurement study performing
+                                stateful crawls on over 20k domains from the Tranco top list, strategically accepting
+                                banners in the first half of domains and measuring intractable cookies in the second
+                                half. Our findings reveal that around 50% of websites send at least one intractable
+                                cookie, with the majority set to expire after more than 10 days. In addition, enabling
+                                the Global Privacy Control (GPC) signal initially reduces the number of intractable
+                                cookies by 30% on average, with a further 32% reduction possible on subsequent visits by
+                                rejecting the banners. Moreover, websites with Consent Management Platform (CMP)
+                                banners, on average, send 6.9 times more intractable cookies compared to those with
+                                native banners. Our research further reveals that even if users reject all other
+                                banners, they still receive a large number of intractable cookies set by websites with
+                                cookie paywalls. Additionally, our measurement on the partitioned cookies — cookies that
+                                are restricted to the top-level site and thus mitigate cross-site tracking — shows that
+                                only 1.3% of tracking cookies are marked as such, indicating their minimal impact on
+                                cross-site tracking via intractable cookies.</p>
+                            <p><b>Authors.</b> <a
+                                    href="https://www.mpi-inf.mpg.de/departments/inet/people/ali-rasaii">Ali
+                                    Rasaii</a>, <a
+                                    href="https://www.mpi-inf.mpg.de/departments/inet/people/ha-dao-thi-thu">Ha Dao</a>,
+                                <a href="https://www.mpi-inf.mpg.de/departments/inet/people/anja-feldmann">Anja
+                                    Feldmann</a>, Mohammadmahdi Javid, <a href="https://olivergasser.net/">Oliver
+                                    Gasser</a>
+                                and <a href="https://www.devashishgosain.com/">Devashish Gosain</a>.
+                            </p>
+                            <div class="row row-cols-auto paper-buttons"><a href="rasaii2023cookiewall.pdf"
+                                    class="btn btn-primary col paper-button">Download paper</a>
+                                <a href="rasaii2023cookiewall.bib"
+                                    class="btn btn-outline-secondary col paper-button">Bibtex</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+
                 <div id="imc23">
                     <center>
                         <h3>Thou Shalt Not Reject: Analyzing Accept-Or-Pay Cookie Banners on the Web</h3>
@@ -171,7 +231,8 @@
                     <p>We publish data and scripts to reproduce our analysis at the
                         Open Research Data Repository of the Max Planck Society to guarantee long-term availability.
                     </p>
-
+                    <p><b>Dataset DOI. (PETS paper)</b> <a
+                            href="https://doi.org/10.17617/3.QZCILK">10.17617/3.QZCILK</a>
                     <p><b>Dataset DOI. (IMC paper)</b> <a href="https://doi.org/10.17617/3.TREBZR">10.17617/3.TREBZR</a>
                     </p>
                     <p><b>Dataset DOI. (PAM paper)</b> <a href="https://doi.org/10.17617/3.1MUYFX">10.17617/3.1MUYFX</a>
@@ -197,9 +258,17 @@
                             <a href="https://www.kuleuven.be/" class="a-img"><img src="logos/kuleuven.png"
                                     alt="KU Leuven logo" class="img-fluid logo" /></a>
                         </div>
-                        <div class="col-md-2 mx-auto my-2 logo-container">
+                        <!-- <div class="col-md-2 mx-auto my-2 logo-container">
                             <a href="https://www.bits-pilani.ac.in/" class="a-img"><img src="logos/BITS_Pilani.png"
                                     alt="BITS Pilani logo" class="img-fluid logo" /></a>
+                        </div> -->
+                        <div class="col-md-2 mx-auto my-2 logo-container">
+                            <a href="https://www.iitb.ac.in/" class="a-img"><img src="logos/IIT_bombay.png"
+                                    alt="IIT Bombay logo" class="img-fluid logo" /></a>
+                        </div>
+                        <div class="col-md-2 mx-auto my-2 logo-container">
+                            <a href="https://ipinfo.io/" class="a-img"><img src="logos/ipinfo.png" alt="ipinfo logo"
+                                    class="img-fluid logo" /></a>
                         </div>
                     </div>
                 </article>
